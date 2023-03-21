@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Roboto:ital,wght@0,100;1,100 & display=swap');
+@import url(https://use.fontawesome.com/releases/v6.1.1/css/all.css);
+:root {
+    --primaryColor: rgb(255,255,255);
+    --secundaryColor: rgb(255,120,45);
+    --tertiaryColor: rgb(45,91,255);
+    --quarterColor: rgba(0,0,0,);
+    --gradientColor:linear-gradient(139.17deg, #5a02b1 39.82%, #FF782D 96.1%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;   
+}
+
+body{display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1080px;
+    height: 656px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 3px 7px 0px rgba(111, 1, 222,0.1),inset 0px 1px 1px #ffff;
+    
+}
+.header{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px;
+    width: 300px;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 7px 0px rgba(111, 1, 222,0.1),inset 0px 1px 1px #ffff;
+    border-radius: 10px; 
+    backdrop-filter: blur(10px); 
+}
+
+.header .avatar{
+    margin: 30px 0 10px 0 ;
+}
+
+.header h2{
+    color: rgba(0,0,0,0.7);
+    margin-bottom: 5px;
+}
+
+.header ul li{
+    position: relative;
+    list-style: none;
+    margin: 18px 0;
+    text-align: center;
+}
+
+.header ul li a{
+    position: relative;
+    display: block;
+    padding: 5px;
+    width: 130px;
+    height: 33px;
+    border: rgba(255,255,255,0.9) solid 1px;
+    border-radius: 0px 30px 30px 30px;
+    color: var(--primaryColor);
+    box-shadow: 0px 4px 5px 1px rgba(111, 1, 222,0.1);
+    text-decoration: none;
+    overflow: hidden;
+}
+
+.header ul li a::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: rgba(111, 1, 222,0.8);
+    z-index: -1;
+    transition: all 1s ease;
+}
+
+.header ul li a:hover::before{
+    width: 100%;
+}
+.header ul li a:active{    
+    border: #5a02b1;
+
+
+}
+
+.section-contain{
+    width: 610px;
+    height: 550px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 3px 7px 0px rgba(111, 1, 222,0.1),inset 0px 1px 1px #ffff;
+    border-radius: 10px;
+}
+.div-contain{
+    margin: 35px auto;
+    width: 575px;
+    height: 480px;
+    overflow:hidden;
+}
+
+.home{
+    width: 515px;
+    height: 480px;
+    background: rgba(255,255,255, 0.1);
+    border-radius: 0px 10px 10px 10px;
+    margin: 45px auto;
+    padding: 25px;
+    color: rgba(0,0,0,0.8);
+    box-shadow: 0px 3px 7px 3px rgba(111, 1, 222,0.1),inset 0px 1px 1px #ffff;
+}
+
+.home-text h1{
+    text-align: left;
+    font-size: 40px;
+    
+}
+.home-text span{
+    color: rgba(111, 1, 222,0.8);
+}
+.skills{
+    width: 515px;
+    height: 285px;
+    background: rgba(255,255,255, 0.1);
+    border-radius: 0px 10px 10px 10px;
+    margin: 37px auto;
+    padding: 8px 25px;
+    box-shadow: 0px 3px 7px 0px rgba(111, 1, 222,0.1),inset 0px 1px 1px #ffff;
+}
+
+.skillspan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills h2 {
+    font-size: 12px;
+    padding: 10px 0 10px 0px;
+    color: rgba(0,0,0,0.7);
+}
+.skills span{
+    font-size: 12px;
+    color: rgba(0,0,0,0.7);
+}
+
+.bar{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px 0px rgba(111, 1, 222,0.1);
+}
+
+.html{
+    height: 8px;
+    background: var(--gradientColor);
+    border-radius: 10px;
+    animation: fillhtml 2s forwards;
+}
+.css{
+    height: 8px;
+    background: var(--gradientColor);
+    border-radius: 10px;
+    animation: fillcss 2s forwards;
+}
+
+.scss{
+    height: 8px;
+    background: var(--gradientColor);
+    border-radius: 10px;
+    animation: fillscss 2s forwards;
+}
+.js{
+    height: 8px;
+    background: var(--gradientColor);
+    border-radius: 10px;
+    animation: filljs 2s forwards;
+}
+.f{
+    height: 8px;
+    background: var(--gradientColor);
+    border-radius: 10px;
+    animation: fillf 2s forwards;
+}
+.ps{
+    height: 8px;
+    background: var(--gradientColor);
+    border-radius: 10px;
+    animation: fillps 2s forwards;
+}
+
+
+.progress:active{
+    animation:fill 2s ease;
+}
+@keyframes fillhtml {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }    
+}
+
+@keyframes fillcss {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%;
+    }    
+}
+@keyframes fillscss {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 60%;
+    }    
+}
+@keyframes fillf {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }    
+}
+@keyframes fillps {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%;
+    }    
+}
+
+@keyframes filljs {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }    
+}
+.descrip-social{
+    width: 515px;
+    height: 190px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px 0px 10px 10px;
+    margin: 0px auto;
+    padding: 0 25px;
+    box-shadow: 0px 3px 7px 0px rgba(111, 1, 222,0.1),inset 0px 1px 1px #ffff;
+}
+
+
+
+.descrip-about{
+    width: 515px;
+    height: 480px;
+    background: rgba(255,255,255, 0.1);
+    border-radius: 0px 10px 10px 10px;
+    margin: 45px auto;
+    padding: 25px 0px;
+    color: rgba(0,0,0,0.8);
+    box-shadow: 0px 3px 7px 3px rgba(111, 1, 222,0.1),inset 0px 1px 1px #ffff;
+}
+.about-container{
+    width: 515px;
+    height: 430px;
+    background: radial-gradient(125% 120% at 32.8% -55%, rgb(255, 146, 84) 0%, rgba(111, 1, 222,0.8) 100%);
+    margin-top: 24px;
+    border-radius: 0px 30px 10px 10px;
+    padding: 20px;
+}
+
+.descrip-about h3{
+    padding-bottom: 10px;
+    color: var(--primaryColor);
+}
+
+.descrip-about p{
+    line-height: 20px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 100;
+    
+}
